@@ -37,7 +37,7 @@ Use at your own risk. I am not responsible for any account issues caused by misu
 Install dependencies:
 
 ```bash
-pip install selenium
+sudo pacman -S geckodriver
 ````
 
 ---
@@ -56,6 +56,7 @@ pip install selenium
    ```bash
    python -m venv venv
    source venv/bin/activate
+   pip install selenium
    ```
 
 3. Edit `script.py` and replace your Instagram credentials:
