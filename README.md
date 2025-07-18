@@ -47,8 +47,8 @@ pip install selenium
 1. Clone the repo:
 
    ```bash
-   git clone https://github.com/yourusername/InstaUnfollowerBot.git
-   cd InstaUnfollowerBot
+   git clone https://github.com/baxterr02/PyInstaUnfollower.git
+   cd PyInstaUnfollower
    ```
 
 2. Create and activate a virtual environment:
