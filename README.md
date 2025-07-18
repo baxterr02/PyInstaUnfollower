@@ -15,7 +15,7 @@ Mass Instagram Unfollower Automation Script
 - Automatically logs into Instagram
 - Opens your profile and loads the "Following" list
 - Unfollows up to a specified number of accounts per session
-- Safe daily limit (e.g. 150/day, under Instagram's 200 unfollow/day cap)
+- Safe daily limit (e.g. 100/day, under Instagram's unfollow/day cap)
 - Works on Firefox (can be adapted for Chrome)
 
 ---
