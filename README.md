@@ -1,8 +1,6 @@
 # PyInstaUnfollower
 Mass Instagram Unfollower Automation Script
 
-Sure! Here’s a clean and professional `README.md` for your Instagram unfollower bot project:
-
 ---
 
 ````markdown
