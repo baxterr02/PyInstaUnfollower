@@ -118,8 +118,3 @@ MIT License
 
 Feel free to fork, open issues, or improve the script! PRs welcome.
 
-```
-
----
-
-
