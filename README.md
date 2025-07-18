@@ -65,7 +65,7 @@ pip install selenium
    ```python
    USERNAME = 'your_username'
    PASSWORD = 'your_password'
-   UNFOLLOW_COUNT = 150  # recommended max per day
+   UNFOLLOW_COUNT = 100  # recommended max per day
    ```
 
 4. Run the script:
