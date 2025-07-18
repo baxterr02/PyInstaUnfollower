@@ -122,9 +122,4 @@ Feel free to fork, open issues, or improve the script! PRs welcome.
 
 ---
 
-Let me know if you'd like to include:
-- Screenshots or demo GIFs
-- A `requirements.txt` or setup script
-- Links to your GitHub profile or a personal website
-```
 
