@@ -1,16 +1,24 @@
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ActionChains
 import time
+import getpass
+
+# === FIREFOX DRIVER CONFIG (define, don't start) ===
+options = Options()
+# options.add_argument("-headless")
+options.binary_location = "/usr/bin/firefox"
+service = Service(executable_path="/usr/bin/geckodriver")
 
 # === CONFIGURATION ===
-USERNAME = ''       # Replace with your Instagram username
-PASSWORD = ''       # Replace with your Instagram password
-UNFOLLOW_COUNT = 100           # Number of accounts to unfollow per run
+USERNAME = input("Enter your Instagram username: ")
+PASSWORD = getpass.getpass("Enter your Instagram password: ")
+UNFOLLOW_COUNT = 100  # Number of accounts to unfollow per run     # Number of accounts to unfollow per run
 
 # === LOGIN FUNCTION ===
 def login(driver):
@@ -29,7 +37,7 @@ def login(driver):
     username_input.send_keys(USERNAME)
     password_input.send_keys(PASSWORD)
     password_input.send_keys(Keys.RETURN)
-    time.sleep(6)
+    time.sleep(20)
 
 # === UNFOLLOW FUNCTION ===
 def unfollow(driver):
@@ -97,10 +105,7 @@ def unfollow(driver):
 
 # === MAIN ===
 if __name__ == "__main__":
-    options = Options()
-    # options.headless = True  # Uncomment to run without opening a window
-    driver = webdriver.Firefox(options=options)
-
+    driver = webdriver.Firefox(service=service, options=options)  # create ONCE here
     try:
         login(driver)
         unfollow(driver)
