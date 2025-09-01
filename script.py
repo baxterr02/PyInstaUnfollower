@@ -12,13 +12,13 @@ import getpass
 # === FIREFOX DRIVER CONFIG (define, don't start) ===
 options = Options()
 # options.add_argument("-headless")
-options.binary_location = "/usr/bin/firefox"
-service = Service(executable_path="/usr/bin/geckodriver")
+#options.binary_location = "/usr/bin/firefox"
+service = Service(executable_path="/snap/bin/geckodriver")
 
 # === CONFIGURATION ===
 USERNAME = input("Enter your Instagram username: ")
 PASSWORD = getpass.getpass("Enter your Instagram password: ")
-UNFOLLOW_COUNT = 100  # Number of accounts to unfollow per run     # Number of accounts to unfollow per run
+UNFOLLOW_COUNT = 500  # Number of accounts to unfollow per run     # Number of accounts to unfollow per run
 
 # === LOGIN FUNCTION ===
 def login(driver):
