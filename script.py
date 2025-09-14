@@ -12,8 +12,8 @@ import getpass
 # === FIREFOX DRIVER CONFIG (define, don't start) ===
 options = Options()
 # options.add_argument("-headless")
-#options.binary_location = "/usr/bin/firefox"
-service = Service(executable_path="/snap/bin/geckodriver")
+options.binary_location = "/usr/bin/firefox"
+service = Service(executable_path="/usr/bin/geckodriver")
 
 # === CONFIGURATION ===
 USERNAME = input("Enter your Instagram username: ")
@@ -65,7 +65,7 @@ def unfollow(driver):
         print(f"[!] Couldn't open Following list: {e}")
         return
 
-    time.sleep(4)
+    time.sleep(15)
 
     unfollowed = 0
     while unfollowed < UNFOLLOW_COUNT:
