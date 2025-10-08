@@ -103,7 +103,7 @@ def unfollow(driver):
 
         time.sleep(2)
 
-# === MAIN ===
+# === MAIN example ===
 if __name__ == "__main__":
     driver = webdriver.Firefox(service=service, options=options)  # create ONCE here
     try:
